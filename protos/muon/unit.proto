@@ -1,0 +1,8 @@
+syntax = "proto3";
+package muon;
+
+import "monad/state.proto";
+
+// For the messages of MUON's unit contract: what a caller asks of a unit and
+// what the unit reports back. Q-MUON keeps a copy of this file. No message is
+// declared yet.

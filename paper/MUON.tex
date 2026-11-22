@@ -1,0 +1,27 @@
+\documentclass[twocolumn]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\raggedbottom
+
+\title{MUON: Micro-Unit Operating Network}
+\author{Harsh Joshi}
+\date{\today}
+
+% Import MONAD canonical definitions
+\input{shared/monad/definitions}
+% MUON-specific definitions
+\input{shared/muon/definitions}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+MUON proposes a common interface for reasoning units, beginning with stock-model adapters and retaining a small learning unit as its long-term design. The interface would make inference, state fidelity, ordered observations, resource refusal and capability identity explicit, while keeping conformance, task adequacy and substitution as separate claims. The research asks whether many small units can compete with a stronger single unit, a mixture of units and a no-swarm control at matched cost. Coordination costs and a minimum task capability govern that comparison. Surprise-driven learning and the combination of separately learned cores remain hypotheses to test. This statement defines the proposed work and its failure conditions; the current kernel re-exports MONAD's types and implements neither the interface nor a learning unit.
+\end{abstract}
+
+\input{sections/00_problem_statement}
+
+\bibliographystyle{plain}
+\bibliography{MUON}
+
+\end{document}
